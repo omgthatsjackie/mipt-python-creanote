@@ -21,22 +21,37 @@
 Классы:
 
 - Bot
-  - методы: start, create_note, get_notes, delete_note, edit_note, update_note_title, update_note_content, export_notes, run, etc.
+  - методы: create_note_title, create_note_content, view_note, edit_note, etc.
 - Database
-  - методы: create_note, get_notes, get_note_by_title, update_note, delete_note, close, etc.
+  - методы: create_note, get_notes, get_note, update_note, delete_note.
 - Note
-  - поля: id, title, text, etc.
+  - поля: id, user_id, title, content
 
 ---
 
 ### Доступные команды
+
+`/start` - команда для старта бота
+
+`/new` - создать новую заметку
+
+`/list` - вывести все заметки
+
+`/view` - вывести заметку по ID
+
+`/edit` - редактировать заметку по ID
+
+`/export` - экспортировать заметку в .txt по ID
+
+`/delete` - удалить заметку по ID
 
 ---
 
 ### Зависимости
 
 - sqlite3
-- python-telegram-bot
+- pyTelegramBotAPI
+- python-dotenv
 
 ---
 
